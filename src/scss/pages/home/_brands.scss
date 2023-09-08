@@ -1,0 +1,50 @@
+#brands{
+    width: 100%;
+    padding-bottom: 111px;
+    .brand{
+        display: flex;
+        justify-content: space-between;
+      
+        margin-top: 30px;
+        flex-wrap: wrap;
+        .brand-right{
+            display: flex;
+            align-items: center;
+            gap: 21px;
+            flex-wrap: wrap;
+        }
+        span{
+            color: #d45d79;
+            font-size: 14px;
+            line-height: 1.7;
+            font-family: "Archivo", sans-serif;
+            font-weight: 400;
+        }
+        h2{
+            font-family: "Lexend", sans-serif;
+            color: #261c2c;
+            font-weight: 700;
+            line-height: 1.2;
+            font-size: 28px;
+            letter-spacing: -0.04em;
+        }
+        figure{
+            img{
+                width: 80px;
+                object-fit: cover;
+                height: 80px;
+            }
+        }
+    }
+    @media(max-width: 996px){
+       .brand{
+        justify-content: center !important;
+        align-items: center !important;
+       }
+    }
+    @media(max-width: 768px){
+        .brand-right{
+            display: none !important;
+        }
+    }
+}

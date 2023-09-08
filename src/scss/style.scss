@@ -1,0 +1,115 @@
+@import "../scss/layout/header";
+@import "./pages/home/member";
+@import "./pages/home/about";
+@import "./pages/home/event";
+@import "./pages/home/brands";
+@import "./layout/footer";
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.container{
+    padding:  0 115px;
+    @media(max-width: 996px){
+        padding: 0 50px;
+    }
+    @media(max-width:480px){
+        padding: 0 20px;
+    }
+}
+
+
+.swiper {
+    
+    width: 100%;
+    height: 100vh;
+    
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+  }
+  .swiper-button-next,.swiper-button-prev{
+    background-color: #D45D79;
+    color: #fff;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 5px;
+    transition: .6s;
+    &:hover{
+        background-color: #fff;
+        color: #D45D79;
+    }
+    &::after{
+        font-size: 12px !important;
+    }
+    @media(max-width: 996px){
+        display: none;
+    }
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #261C2C;
+    cursor: pointer;
+    padding: 22px;
+    border-radius: 4px;
+    box-shadow: 0 3px 15px 2px rgba(51, 51, 51, 0.1);
+    transition: .5s;
+  }
+  
+  #myBtn:hover {
+    background-color:#261C2C;
+    color: #fff;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .brand-slide{
+    width: 100px !important;
+    height: 100px !important;
+    background-color: transparent !important;
+  }
+
+  .hide{
+    display: none;
+  }
+  .show{
+    display: flex !important;
+  }

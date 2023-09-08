@@ -1,0 +1,103 @@
+#about {
+  width: 100%;
+  padding: 100px 0;
+  .container {
+    display: flex;
+    justify-content: end;
+    gap: 80px;
+    
+    figure {
+        display: flex;
+        justify-content: end;
+      img {
+        object-fit: cover;
+        width:100%;
+        border-radius: 15px;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-left: 8.33333%;
+      span {
+        color: #d45d79;
+        font-size: 20px;
+        line-height: 1.7;
+        font-family: "Archivo", sans-serif;
+        font-weight: 400;
+       
+      }
+      h2 {
+        font-size: 45px;
+        font-family: "Lexend", sans-serif;
+        color: #261c2c;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.04em;
+        
+      }
+      p {
+        font-weight: 600;
+        color: #555;
+        font-family: "Archivo", sans-serif;
+        line-height: 1.7;
+        font-size: 16px;
+        display: flex;
+        justify-content: end;
+      }
+      ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li{
+            button{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+                background: #fafafa;
+                border-radius: 15px;
+                padding: 30px;
+                color: #261C2C;
+                border: none;
+                width: 100%;
+                font-size: 1rem;
+                text-align: left;
+                font-family:"Archivo"; 
+                font-weight: 700;
+                cursor: pointer;
+                transition: .5s;
+                &:hover{
+                  background-color: #d45d79;
+                  color: #fff;
+                }
+                
+            }
+            .par{
+              display: none; text-align: center;  justify-content: center;align-items: center;
+            }
+        }
+      }
+    }
+  }
+  @media(max-width: 996px){
+    .container{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center !important;
+        align-items: center;
+        figure{
+            justify-content: center !important;
+            align-items: center !important;
+        }
+        img{
+            width: 85% !important;
+        }
+        .content{
+            margin-left: 0 !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+    }
+  }
+}
